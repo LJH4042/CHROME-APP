@@ -8,7 +8,7 @@ function Weather() {
     const lat = position.coords.latitude
     const lng = position.coords.longitude
 
-    const API_KEY = 'e0343e5dc3c0d9d81f914e1652dc5646'
+    const API_KEY = 'API_KEY'
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}&units=metric`
 
     fetch(url)
