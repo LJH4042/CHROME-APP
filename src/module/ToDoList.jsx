@@ -49,7 +49,7 @@ function ToDoList() {
   useEffect(() => {
     localStorage.setItem('todoList', JSON.stringify(todoList))
     localStorage.setItem('ListKey', parseInt(listKey.current))
-  })
+  }, [todoList])
 
   return (
     <div>

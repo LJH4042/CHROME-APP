@@ -11,7 +11,7 @@ function Clock() {
   useEffect(() => {
     const time = setInterval(renewTime, 1000)
     return () => clearInterval(time)
-  })
+  }, [])
 
   return (
     <div>
